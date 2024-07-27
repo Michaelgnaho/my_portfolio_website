@@ -12,8 +12,8 @@ function Contacts(props) {
   };
 
   const [formDetails, setFormDetails] = useState(FormInitialDetails);
-  const [buttonText, setButtonText] = useState("Send");
-  const [status, setStatus] = useState({}); // eslint-disable-next-line no-unused-vars
+  const [buttonText, setButtonText] = useState("Send"); // eslint-disable-next-line
+  const [status, setStatus] = useState({}); //eslint-disable-next-line no-unused-vars
 
   const onFormUpdate = (category, value) => {
     setFormDetails({

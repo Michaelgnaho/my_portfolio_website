@@ -88,13 +88,13 @@ function NavBar() {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://twitter.com">
+                <a href="https://x.com/MichaelGnaho">
                   <img src={navIcon1} alt="Twitter"></img>
                 </a>
-                <a href="https://facebook.com">
+                <a href="https://web.facebook.com/?_rdc=1&_rdr">
                   <img src={navIcon2} alt="Facebook"></img>
                 </a>
-                <a href="https://linkedin.com">
+                <a href="https://www.linkedin.com/in/michael-a-m-a-g-7b487020b/">
                   <img src={navIcon3} alt="LinkedIn"></img>
                 </a>
               </div>

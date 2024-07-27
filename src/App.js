@@ -5,7 +5,6 @@ import Banner from "./components/Banner";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contacts from "./components/Contacts";
-import { NewsLetter } from "./components/NewsLetter";
 import { Footer } from "./components/Footer";
 
 function App() {
