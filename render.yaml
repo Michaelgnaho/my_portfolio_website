@@ -1,9 +1,9 @@
 services:
   - type: web
     name: my-portfolio
-    env: node
-    buildCommand: npm install && npm run build
-    startCommand: npm start
+    env: static
+    buildCommand: yarn install && yarn build
+    startCommand: serve -s build
     envVars:
       - key: NODE_ENV
         value: production
@@ -11,6 +11,15 @@ services:
         sync: false
       - key: EMAIL_PASS
         sync: false
+
+        services:
+  - type: web
+    name: my-portfolio-website
+    env: static
+    buildCommand: yarn build
+    startCommand: serve -s build
+    staticPublishPath: build
+
 
 
 
