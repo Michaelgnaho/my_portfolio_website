@@ -3,6 +3,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import HeaderImg from "../assets/img/header-img.svg";
 import Headshot from "../assets/img/my_personal_headshot3.jpg";
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 function Banner(props) {
   const [loopNum, setLoopNum] = useState(0);
@@ -46,7 +48,10 @@ function Banner(props) {
       <Container className="banner" id="home">
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Hey! welcome to my portfolio</span>
+          <TrackVisibility >
+           {({ isVisible }) => 
+           <div className={isVisible? "animate__animated animate__bounce" : ""}>
+           <span className="tagline">Hey! welcome to my portfolio</span>
             <h1>
               {"I'm Michael Gnaho"} <span className="wrap">{text}</span>
             </h1>
@@ -58,6 +63,8 @@ function Banner(props) {
               {" "}
               Let's Connect <ArrowRightCircle size={10} />{" "}
             </button>
+            </div>}
+            </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img className="profilePic" src={Headshot} alt="Header img" />
