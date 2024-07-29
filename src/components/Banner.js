@@ -50,7 +50,7 @@ function Banner(props) {
           <Col xs={12} md={6} xl={7}>
           <TrackVisibility >
            {({ isVisible }) => 
-           <div className={isVisible? "animate__animated animate__bounce" : ""}>
+           <div className={isVisible? "animate__animated animate__animate__rotateInDownLeft" : ""}>
            <span className="tagline">Hey There! welcome to my portfolio</span>
             <h1>
               {"I'm Michael Gnaho"} <span className="wrap">{text}</span>
