@@ -51,12 +51,12 @@ function Banner(props) {
           <TrackVisibility >
            {({ isVisible }) => 
            <div className={isVisible? "animate__animated animate__bounce" : ""}>
-           <span className="tagline">Hey! welcome to my portfolio</span>
+           <span className="tagline">Hey There! welcome to my portfolio</span>
             <h1>
               {"I'm Michael Gnaho"} <span className="wrap">{text}</span>
             </h1>
             <p>
-              I have a passion for creating engaging and user-friendly websites.
+              Yes! I have a passion for creating engaging and user-friendly websites.
               I have experience with HTML, CSS, and JavaScript.
             </p>
             <button onClick={() => console.log("connect")}>
