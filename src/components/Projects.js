@@ -3,44 +3,52 @@ import ProjectCards from "./ProjectCards";
 import projImg1 from "../assets/img/tindog_snapshot.PNG";
 import projImg2 from "../assets/img/corprate_snaphot.PNG";
 import projImg3 from "../assets/img/mydos_snapshot.PNG";
-import color from "../assets/img/color-sharp2.png";
-// import "animate.css";
+import projImg4 from "../assets/img/blob_snapshot.PNG";
+import projImg5 from "../assets/img/news_letter_snapshot.PNG";
 
-// export const Projects = () => {
+import color from "../assets/img/color-sharp2.png";
+import "animate.css";
+import TrackVisibility from 'react-on-screen';
+
+export const Projects = () => {
 const projects = [
   {
     title: "Tindog App",
     description: "An app for buying and taking care of dogs",
     imgUrl: projImg1,
+    proLink:"https://michaelgnaho.github.io/tindog_web/"
   },
   {
     title: "Front_end Corprate website",
     description: "A demo of a website that offers web development services",
     imgUrl: projImg2,
+    proLink:"https://corporate-website-1k6f.vercel.app"
   },
   {
     title: "Full Stack Todo app",
     description: "It allows people to manage their task easily",
     imgUrl: projImg3,
+    proLink:"https://mydos-web-app.onrender.com"
   },
   {
-    title: "Business Startup",
+    title: "Blog app",
+    description: "This is an app where you can post a write up , delete and edit your blog",
+    imgUrl: projImg4,
+    proLink:"https://corporate-website-1k6f.vercel.app"
+  },
+  {
+    title: "Newsletter App",
     description: "Design & Development",
-    imgUrl: projImg1,
+    imgUrl: projImg5,
+    proLink:"https://news-letter-app-d357.onrender.com/"
   },
   {
-    title: "Business Startup",
-    description: "Design & Development",
-    imgUrl: projImg2,
-  },
-  {
-    title: "Business Startup",
+    title: "Coporate website",
     description: "Design & Development",
     imgUrl: projImg3,
+    proLink:"https://corporate-website-1k6f.vercel.app"
   },
 ];
-
-function Projects(props) {
   return (
     <div className="project" id="projects">
       <Container>
@@ -48,12 +56,12 @@ function Projects(props) {
           <Col>
             <h2>Projects</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              This are projects I built on the following with  basic HTML,CSS,BOOTSTRAP,REACT and other new technologies that cut across all level of professionalism.
             </p>
-            <Tab.Container className="projects-tabs" defaultActiveKey="first">
+            <TrackVisibility >
+           {({ isVisible }) => 
+            <div className={isVisible? "animate__animated animate__fadeIn" : ""}>
+             <Tab.Container className="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
                 className="nav-pills mb-5 justify-content-center align-items-center"
@@ -77,10 +85,11 @@ function Projects(props) {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second"> lorem i</Tab.Pane>
-                <Tab.Pane eventKey="third"> hey you</Tab.Pane>
+                <Tab.Pane eventKey="second"> MORE COMING ...</Tab.Pane>
+                <Tab.Pane eventKey="third"> MORE COMING ... </Tab.Pane>
               </Tab.Content>
-            </Tab.Container>
+            </Tab.Container> </div>}
+            </TrackVisibility>
           </Col>
         </Row>
       </Container>
@@ -90,5 +99,4 @@ function Projects(props) {
     </div>
   );
 }
-
 export default Projects;
