@@ -60,7 +60,7 @@ const projects = [
             </p>
             <TrackVisibility >
            {({ isVisible }) => 
-            <div className={isVisible? "animate__animated animate__fadeIn" : ""}>
+            <div className={isVisible? "animate__animated animate__fadeInRightBig" : ""}>
              <Tab.Container className="projects-tabs" defaultActiveKey="first">
               <Nav
                 variant="pills"
