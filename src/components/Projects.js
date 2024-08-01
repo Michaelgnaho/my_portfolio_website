@@ -3,7 +3,7 @@ import ProjectCards from "./ProjectCards";
 import projImg1 from "../assets/img/tindog_snapshot.PNG";
 import projImg2 from "../assets/img/corprate_snaphot.PNG";
 import projImg3 from "../assets/img/mydos_snapshot.PNG";
-import projImg4 from "../assets/img/blob_snapshot.PNG";
+import projImg4 from "../assets/img/blog_snapshot.PNG";
 import projImg5 from "../assets/img/news_letter_snapshot.PNG";
 
 import color from "../assets/img/color-sharp2.png";
