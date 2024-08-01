@@ -9,9 +9,7 @@ function ProjectCards({ title, description, imgUrl, proLink }) {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
-        </div>
-        <div>
-          <a href={proLink}><button>Project Link</button></a>                                  
+          <a href={proLink}><button>Project Link</button></a>     
         </div>
       </div>
     </Col>
