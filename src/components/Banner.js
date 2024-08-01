@@ -5,6 +5,7 @@ import HeaderImg from "../assets/img/header-img.svg";
 import Headshot from "../assets/img/my_personal_headshot3.jpg";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import About from "./About"
 
 function Banner(props) {
   const [loopNum, setLoopNum] = useState(0);
@@ -71,6 +72,9 @@ function Banner(props) {
             <img src={HeaderImg} alt="Header img" />
           </Col>
         </Row>
+
+        <div className="newsletter-bx wow slideInUp"> <About/> </div>
+
       </Container>
     </div>
   );
