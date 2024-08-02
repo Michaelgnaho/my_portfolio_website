@@ -3,9 +3,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import HeaderImg from "../assets/img/header-img.svg";
 import Headshot from "../assets/img/my_personal_headshot3.jpg";
-import 'animate.css';
-import TrackVisibility from 'react-on-screen';
-import About from "./About"
+import "animate.css";
+import TrackVisibility from "react-on-screen";
+import About from "./About";
 
 function Banner(props) {
   const [loopNum, setLoopNum] = useState(0);
@@ -49,22 +49,30 @@ function Banner(props) {
       <Container className="banner" id="home">
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-          <TrackVisibility >
-           {({ isVisible }) => 
-           <div className={isVisible? "animate__animated animate__fadeInUp" : ""}>
-           <span className="tagline">Hey There! welcome to my portfolio</span>
-            <h1>
-              {"I'm Michael Gnaho"} <span className="wrap">{text}</span>
-            </h1>
-            <p>
-              Yes! I have a passion for creating engaging and user-friendly websites.
-              I have experience with HTML, CSS, and JavaScript.
-            </p>
-            <button onClick={() => console.log("connect")}>
-              {" "}
-              Let's Connect <ArrowRightCircle size={10} />{" "}
-            </button>
-            </div>}
+            <TrackVisibility>
+              {({ isVisible }) => (
+                <div
+                  className={
+                    isVisible ? "animate__animated animate__fadeInUp" : ""
+                  }
+                >
+                  <span className="tagline">
+                    Hey There! Welcome to my portfolio
+                  </span>
+                  <h1>
+                    {"I'm Michael Gnaho"} <span className="wrap">{text}</span>
+                  </h1>
+                  <p>
+                    Yes! I have a passion for creating engaging and
+                    user-friendly websites. I have experience with HTML, CSS,
+                    and JavaScript.
+                  </p>
+                  <button onClick={() => console.log("connect")}>
+                    {" "}
+                    Let's Connect <ArrowRightCircle size={10} />{" "}
+                  </button>
+                </div>
+              )}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
@@ -73,8 +81,10 @@ function Banner(props) {
           </Col>
         </Row>
 
-        <div className="newsletter-bx wow slideInUp"> <About/> </div>
-
+        <div className="newsletter-bx wow slideInUp">
+          {" "}
+          <About />{" "}
+        </div>
       </Container>
     </div>
   );

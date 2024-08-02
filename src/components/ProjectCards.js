@@ -1,7 +1,6 @@
 import React from "react";
 import { Col } from "react-bootstrap";
-import Button from 'react-bootstrap/Button';
-
+import Button from "react-bootstrap/Button";
 
 function ProjectCards({ title, description, imgUrl, proLink }) {
   return (
@@ -11,8 +10,10 @@ function ProjectCards({ title, description, imgUrl, proLink }) {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
-          <br/>
-          <a href={proLink}><Button >Project Link</Button></a>     
+          <br />
+          <a href={proLink} target="_blank" rel="noopener noreferrer">
+            <Button>Project Link</Button>
+          </a>
         </div>
       </div>
     </Col>
