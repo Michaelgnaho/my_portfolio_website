@@ -81,7 +81,7 @@ function Banner(props) {
           </Col>
         </Row>
 
-        <div className=" slideInUp">
+        <div className="newsletter-bx wow slideInUp">
           {" "}
           <About />{" "}
         </div>
