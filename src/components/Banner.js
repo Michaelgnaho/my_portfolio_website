@@ -83,7 +83,17 @@ function Banner(props) {
 
         <div className="newsletter-bx wow slideInUp">
           {" "}
-          <About />{" "}
+          <TrackVisibility>
+            {({ isVisible }) => (
+              <div
+                className={
+                  isVisible ? "animate__animated animate__fadeInUp" : ""
+                }
+              >
+                <About />
+              </div>
+            )}
+          </TrackVisibility>
         </div>
       </Container>
     </div>
