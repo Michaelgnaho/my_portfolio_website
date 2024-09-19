@@ -89,36 +89,31 @@ function NavBar() {
             <span className="navbar-text">
               <div className="social-icon">
                 <a
-                  href="https://www.instagram.com/michael_adeyemi_gnaho/?hl=en"
+                  href="https://www.linkedin.com/in/michael-adeyemi-gnaho-7b487020b/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={navIcon1} alt="Instagram"></img>
+                  <img src={navIcon1} alt="Linkedin"></img>
                 </a>
                 <a
-                  href="https://web.facebook.com/?_rdc=1&_rdr"
+                  href="https://web.facebook.com/micheal.adeyemi.963/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <img src={navIcon2} alt="Facebook"></img>
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/michael-a-m-a-g-7b487020b/"
+                  href="https://www.instagram.com/simplymag_/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={navIcon3} alt="LinkedIn"></img>
+                  <img src={navIcon3} alt="Instagram"></img>
                 </a>
               </div>
-              <button
-                type="button"
-                onClick={() => {
-                  console.log("Thanks");
-                }}
-              >
-                {" "}
-                Let's Connect
-              </button>
+              <a href="https://wa.me/+2348145046894?text=Hello%20from%20my%20website!" target="_blank"  rel="noopener noreferrer" >
+  <button type="button">Let's Chat for business</button>
+</a>
+          
             </span>
           </Navbar.Collapse>
         </Container>

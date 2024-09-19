@@ -52,7 +52,6 @@ function Skills(props) {
                 <h5>Graphics Design</h5>{" "}
               </div>
             </Carousel>
-            ;
           </Col>
         </Row>
         <div className="background-image-left">
