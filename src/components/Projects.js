@@ -3,8 +3,10 @@ import ProjectCards from "./ProjectCards";
 import projImg1 from "../assets/img/tindog_snapshot.PNG";
 import projImg2 from "../assets/img/corprate_snaphot.PNG";
 import projImg3 from "../assets/img/mydos_snapshot.PNG";
-import projImg4 from "../assets/img/blog_snapshot.PNG";
+import projImg4 from "../assets/img/magbank.PNG";
 import projImg5 from "../assets/img/news_letter_snapshot.PNG";
+import projImg6 from "../assets/img/simple _form.PNG";
+
 
 import color from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -31,11 +33,11 @@ export const Projects = () => {
       proLink: "https://mydos-web-app.onrender.com",
     },
     {
-      title: "Blog app",
+      title: "MAG BANK",
       description:
-        "This is an app where you can post a write up , delete and edit your blog",
+        "This a finance website",
       imgUrl: projImg4,
-      proLink: "https://corporate-website-1k6f.vercel.app",
+      proLink: "https://mag-bank-1.vercel.app/",
     },
     {
       title: "Newsletter App",
@@ -44,10 +46,10 @@ export const Projects = () => {
       proLink: "https://news-letter-app-d357.onrender.com/",
     },
     {
-      title: "Coporate website",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      proLink: "https://corporate-website-1k6f.vercel.app",
+      title: "Simple Form",
+      description: "This is an app that cosist of a simple form where you add users and thier age",
+      imgUrl: projImg6,
+      proLink: "https://simple-form-silk.vercel.app/",
     },
   ];
   return (
