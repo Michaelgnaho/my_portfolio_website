@@ -34,7 +34,7 @@ function NavBar() {
   }
 
   return (
-    <div>
+    <div className=" bg-slate-500">
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="#home">

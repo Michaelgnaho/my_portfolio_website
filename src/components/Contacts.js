@@ -12,8 +12,8 @@ function Contacts(props) {
   };
 
   const [formDetails, setFormDetails] = useState(FormInitialDetails);
-  const [buttonText, setButtonText] = useState("Send"); // eslint-disable-next-line
-  const [status, setStatus] = useState({}); //eslint-disable-next-line no-unused-vars
+  const [buttonText, setButtonText] = useState("Send");
+  const [status, setStatus] = useState({});
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -25,29 +25,24 @@ function Contacts(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-
+  
     try {
-      const response = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formDetails),
-      });
-
-      const result = await response.json();
-      setFormDetails(FormInitialDetails);
-
-      if (response.ok) {
-        setStatus({ status: "success" });
-        setButtonText("Sent");
-      } else {
-        setStatus({ status: "error" });
-        console.error(result);
-        setButtonText("Send");
-      }
+      const whatsappNumber = "+2348145046894";
+      const whatsappMessage = `First Name: ${formDetails.firstName}\nLast Name: ${formDetails.lastName}\nEmail: ${formDetails.email}\nPhone: ${formDetails.phone}\nMessage: ${formDetails.message}`;
+  
+      const whatsappApiUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+        whatsappMessage
+      )}`;
+  
+      // Open WhatsApp in a new tab
+      window.open(whatsappApiUrl, "_blank");
+  
+      setStatus({ status: "success" });
+      setButtonText("Sent");
+      // Reset the form (optional)
+      setFormDetails(FormInitialDetails); 
     } catch (error) {
-      console.error("Error submitting form:", error);
+      console.error("Error opening WhatsApp:", error);
       setStatus({ status: "error" });
       setButtonText("Send");
     }
