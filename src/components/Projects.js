@@ -67,7 +67,7 @@ export const Projects = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeInRightBig" : ""
+                    isVisible ? "animate__animated animate__fadeInUp" : ""
                   }
                 >
                   <Tab.Container

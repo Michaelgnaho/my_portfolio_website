@@ -33,7 +33,7 @@ function Skills(props) {
         <Row className="skill-bx">
           <Col>
             <h2 className="skills-heading">Skills</h2>
-            <p>I am proficient in the these field</p>
+            <p>I am proficient in the these fields</p>
             <Carousel responsive={responsive} infinite className="skill-slider">
               <div className="item">
                 <img src={meter3} alt="img1" />
@@ -50,6 +50,10 @@ function Skills(props) {
               <div className="item">
                 <img src={meter3} alt="img1" />
                 <h5>Graphics Design</h5>{" "}
+              </div>
+              <div className="item">
+                <img src={meter3} alt="img1" />
+                <h5> Frontend Development </h5>{" "}
               </div>
             </Carousel>
           </Col>

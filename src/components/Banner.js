@@ -14,7 +14,7 @@ function Banner(props) {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
 
   const toRotate = useMemo(
-    () => ["Web developer", "Frontend engineer", "UI/UX Designer"],
+    () => ["Software Engineer","Web Developer", "Frontend Engineer", "UI/UX Designer", ],
     []
   );
 
@@ -64,8 +64,7 @@ function Banner(props) {
                   </h1>
                   <p>
                     Yes! I have a passion for creating engaging and
-                    user-friendly websites. I have experience with HTML, CSS,
-                    and JavaScript.
+                    user-friendly websites. I have experience in HTML, CSS, React, Bootstrap, Typescript, Tailwind CSS JavaScript etc...
                   </p>
                   <button onClick={() => console.log("connect")}>
                     {" "}
