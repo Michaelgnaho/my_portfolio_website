@@ -1,19 +1,20 @@
 import React from "react";
 import { Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import {Link} from "react-router-dom"
 
 function ProjectCards({ title, description, imgUrl, proLink }) {
   return (
     <Col size={12} sm={6} md={4}>
-      <div className="proj-imgbx">
+      <div className="proj-imgbx animate">
         <img src={imgUrl} alt="img" />
-        <div className="proj-txtx">
-          <h4>{title}</h4>
-          <span>{description}</span>
+        <div className="proj-txtx animate">
+          <h4 className="animate">{title}</h4>
+          <span className="animate">{description}</span>
           <br />
-          <a href={proLink} target="_blank" rel="noopener noreferrer">
-            <Button>Project Link</Button>
-          </a>
+          <Link  to={proLink} target="_blank" rel="noopener noreferrer">
+            <Button className="animate">Project Link</Button>
+          </Link>
         </div>
       </div>
     </Col>

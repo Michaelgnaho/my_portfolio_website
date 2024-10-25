@@ -8,6 +8,7 @@ import projImg5 from "../assets/img/news_letter_snapshot.PNG";
 import projImg6 from "../assets/img/simple _form.PNG";
 
 
+
 import color from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -53,12 +54,12 @@ export const Projects = () => {
     },
   ];
   return (
-    <div className="project" id="projects">
+    <div className="project animate" id="projects">
       <Container>
         <Row>
           <Col>
-            <h2>Projects</h2>
-            <p>
+            <h2 className="animate">Projects</h2>
+            <p  className="animate">
               These are projects I built with basic HTML,CSS,BOOTSTRAP,REACT and
               other new technologies that cut across all level of
               professionalism.
@@ -67,16 +68,16 @@ export const Projects = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeInUp" : ""
+                    isVisible ? "animate" : ""
                   }
                 >
                   <Tab.Container
-                    className="projects-tabs"
+                    className="projects-tabs  animate"
                     defaultActiveKey="first"
                   >
                     <Nav
                       variant="pills"
-                      className="nav-pills mb-5 justify-content-center align-items-center"
+                      className="nav-pills mb-5 justify-content-center align-items-center animate"
                       id="pills-tab"
                     >
                       <Nav.Item as="li">
@@ -107,7 +108,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <div className="background-image-right">
+      <div className="background-image-right animate">
         <img src={color} alt="img" />
       </div>
     </div>

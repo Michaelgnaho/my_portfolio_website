@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /************ Custom Font ************/
 @font-face {
   font-family: Centra;
@@ -14,12 +18,9 @@
   src: url("./assets/font/CentraNo2-Book.ttf");
   font-weight: 400;
 }
-
 /************ Default Css ************/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+ 
 }
 
 html {
@@ -42,8 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
-  padding: 0;
+
   line-height: normal;
 }
 
@@ -649,3 +649,36 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+
+.glass-card {
+  backdrop-filter: blur(25px) saturate(141%);
+    -webkit-backdrop-filter: blur(25px) saturate(141%);
+    background-color: rgba(101, 101, 108, 0.57);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);}
+    .glass-card:hover {
+      backdrop-filter: blur(30px) saturate(161%);
+      -webkit-backdrop-filter: blur(30px) saturate(161%);
+      background-color: rgba(101, 101, 108, 0.65);
+    }
+
+
+    @keyframes appear{
+      from{
+        opacity: 0;
+        scale: 0;
+      }
+    
+      to{
+        opacity: 1;
+        scale: 1;
+      }
+    
+    }
+    
+    .animate{
+      animation: appear  ease-in-out;
+      animation-timeline: view() ;
+      animation-range: entry 10% cover 40%;
+    }

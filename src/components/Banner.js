@@ -46,23 +46,23 @@ function Banner(props) {
 
   return (
     <div>
-      <Container className="banner" id="home">
-        <Row className="align-items-center">
+      <Container className="banner " id="home">
+        <Row className="align-items-center ">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? "animate__animated animate__fadeInUp" : ""
+                    isVisible ? "animate" : ""
                   }
                 >
-                  <span className="tagline">
+                  <span className="tagline animate">
                     Hey There! Welcome to my portfolio
                   </span>
                   <h1>
-                    {"I'm Michael Gnaho"} <span className="wrap">{text}</span>
+                    {"I'm Michael Gnaho"} <span className="wrap animate">{text}</span>
                   </h1>
-                  <p>
+                  <p className="animate">
                     Yes! I have a passion for creating engaging and
                     user-friendly websites. I have experience in HTML, CSS, React, Bootstrap, Typescript, Tailwind CSS JavaScript etc...
                   </p>
@@ -80,20 +80,8 @@ function Banner(props) {
           </Col>
         </Row>
 
-        <div className="newsletter-bx wow slideInUp">
-          {" "}
-          <TrackVisibility>
-            {({ isVisible }) => (
-              <div
-                className={
-                  isVisible ? "animate__animated animate__fadeInUp" : ""
-                }
-              >
-                <About />
-              </div>
-            )}
-          </TrackVisibility>
-        </div>
+          <About />
+             
       </Container>
     </div>
   );

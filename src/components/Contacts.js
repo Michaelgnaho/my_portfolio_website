@@ -49,17 +49,17 @@ function Contacts(props) {
   };
 
   return (
-    <div className="contact" id="connect">
+    <div className="contact animate" id="connect">
       <Container>
-        <Row className="align-items-center">
+        <Row className="align-items-center animate">
           <Col md={6}>
-            <img src={contactImg} alt="Contact Us" />
+            <img src={contactImg} alt="Contact Us" className="animate" />
           </Col>
           <Col md={6}>
-            <h2>Get in Touch</h2>
+            <h2 className="animate">Get in Touch</h2>
             <form onSubmit={handleSubmit}>
               <Row>
-                <Col size={12} sm={6} className="px-1">
+                <Col size={12} sm={6} className="px-1 animate">
                   <input
                     type="text"
                     value={formDetails.firstName}
@@ -67,7 +67,7 @@ function Contacts(props) {
                     onChange={(e) => onFormUpdate("firstName", e.target.value)}
                   />
                 </Col>
-                <Col size={12} sm={6} className="px-1">
+                <Col size={12} sm={6} className="px-1 animate">
                   <input
                     type="text"
                     value={formDetails.lastName}
@@ -75,7 +75,7 @@ function Contacts(props) {
                     onChange={(e) => onFormUpdate("lastName", e.target.value)}
                   />
                 </Col>
-                <Col size={12} sm={6} className="px-1">
+                <Col size={12} sm={6} className="px-1 animate">
                   <input
                     type="email"
                     value={formDetails.email}
@@ -83,7 +83,7 @@ function Contacts(props) {
                     onChange={(e) => onFormUpdate("email", e.target.value)}
                   />
                 </Col>
-                <Col size={12} sm={6} className="px-1">
+                <Col size={12} sm={6} className="px-1 animate">
                   <input
                     type="tel"
                     value={formDetails.phone}
@@ -91,7 +91,7 @@ function Contacts(props) {
                     onChange={(e) => onFormUpdate("phone", e.target.value)}
                   />
                 </Col>
-                <Col size={12} className="px-1">
+                <Col size={12} className="px-1 animate">
                   <textarea
                     rows="6"
                     value={formDetails.message}
